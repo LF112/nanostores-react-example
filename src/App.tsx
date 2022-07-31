@@ -2,14 +2,19 @@ import React from 'react'
 import styled from 'styled-components'
 //[ package ]
 
+import Counter from 'components/Counter'
+
 //=> Main Component
 export default () => {
 	return (
 		<Main>
-			<h1>你好，世界！</h1>
+			<h1>NanoStores</h1>
 			<p>
 				Powered by <span>React</span>
 			</p>
+			<Container>
+				<Counter />
+			</Container>
 		</Main>
 	)
 }
@@ -22,10 +27,13 @@ const Main = styled.main`
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	padding: 0 10%;
 	> h1 {
+		font-family: 'Google Sans';
 		font-size: 50px;
 		font-weight: bold;
 		color: #fff;
+		letter-spacing: 2px;
 	}
 	> p {
 		color: rgba(255, 255, 255, 0.75);
@@ -64,4 +72,9 @@ const Main = styled.main`
 			rgb(131 166 203 / 30%),
 			rgba(131, 165, 203, 0) 30%
 		);
+`
+
+const Container = styled.div`
+	position: relative;
+	margin-top: 25px;
 `
