@@ -1,5 +1,5 @@
 
-# REACT TEMPLATE
+# NANOSTORES REACT TEMPLATE
 
 > ```bash
 > ______________  ________________

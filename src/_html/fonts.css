@@ -6,3 +6,8 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Geometos';
+    src: url('./src/assets/fonts/geometos.woff') format('truetype');
+}
